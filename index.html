@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0e0e" />
+    <meta name="description" content="三角洲陪玩俱乐部点单演示。选择服务与在线陪玩师，分享选单由客服确认。" />
+    <title>三角洲陪玩俱乐部 · 点单体验</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+      <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 16V3m0 0L7 8m5-5 5 5M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 14v-3a9 9 0 0 1 18 0v3M3 14v3a2 2 0 0 0 2 2h2v-7H5a2 2 0 0 0-2 2Zm18 0v3a2 2 0 0 1-2 2h-2v-7h2a2 2 0 0 1 2 2ZM17 19a4 4 0 0 1-4 3h-2"/></symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="三角洲陪玩俱乐部，返回顶部">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="brand-text"><strong>三角洲陪玩俱乐部</strong><small>DELTA COMPANION CLUB</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#services">精选服务</a><a href="#companions">王牌陪玩师</a><a href="#process">下单流程</a>
+      </nav>
+      <a class="header-cta" href="#services">开始点单 <svg><use href="#i-arrow"/></svg></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image"></div>
+        <div class="hero-noise"></div>
+        <div class="hero-inner container">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> 为每一场撤离，留下一段好故事</div>
+            <div class="hero-index">01 / CURATED EXPERIENCE</div>
+            <h1 id="hero-title">并肩入局，<br /><em>从容撤离。</em></h1>
+            <p>有默契的队友，让每次出发都值得期待。挑选服务与心仪陪玩师，剩下的交给我们安排。</p>
+            <a class="hero-button" href="#services">探索服务 <svg><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="hero-side"><span>THE ART OF PLAYING TOGETHER</span><span class="hero-side-line"></span><span>EST. 2026</span></div>
+        </div>
+        <div class="hero-bottom container"><span>EXTRACTION · TEAMWORK · STORIES</span><span>向下探索 <span class="scroll-line"></span></span></div>
+      </section>
+
+      <div class="announcement container" role="note">
+        <div class="announcement-tag">CLUB NOTE <span>本周活动</span></div>
+        <div class="announcement-copy"><strong>夜航计划 · 黄金时段开放预约</strong><span>每晚 20:00—02:00 优先匹配在线陪玩师，价格透明，客服确认后录单。</span></div>
+        <a href="#services" aria-label="查看服务"><svg><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <section class="intro container" aria-label="俱乐部介绍">
+        <div class="intro-rule"><span>THE CLUB STANDARD</span><span>001 — 003</span></div>
+        <div class="intro-content"><p class="section-kicker">不止一局游戏</p><h2>每一次组队，<br /><span>都值得认真对待。</span></h2><p>从路线配合到轻松闲聊，我们挑选懂战术、会沟通的伙伴。固定价格、清晰服务、由客服人工确认，让你的每一步选择都安心。</p></div>
+        <div class="intro-metrics"><div><strong>03</strong><span>首发精选服务</span></div><div><strong>1v1</strong><span>专属客服确认</span></div><div><strong>24h</strong><span>随时浏览选单</span></div></div>
+      </section>
+
+      <section id="services" class="services section-pad container" aria-labelledby="services-title">
+        <div class="section-head"><div><p class="section-kicker">01 / SERVICES</p><h2 id="services-title">选择你的<span>本局体验</span></h2></div><p>明码标价，按局或按小时计费。<br />实际安排由客服线下确认。</p></div>
+        <div class="service-list" id="service-list"></div>
+        <p class="fine-print">* 以上均为 Demo 展示价格。服务细节、游戏时段及实际录单以客服确认结果为准。</p>
+      </section>
+
+      <section id="companions" class="companions section-pad" aria-labelledby="companions-title">
+        <div class="container"><div class="section-head"><div><p class="section-kicker">02 / THE PEOPLE</p><h2 id="companions-title">认识你的<span>同行者</span></h2></div><p>各有所长，也各有温度。<br />仅在线陪玩师可加入当前选单。</p></div>
+          <div class="companion-grid" id="companion-grid"></div>
+          <p class="fine-print">* 人物资料、接单数、评价和在线状态均为演示数据。</p>
+        </div>
+      </section>
+
+      <section id="process" class="process section-pad container" aria-labelledby="process-title">
+        <div class="section-head"><div><p class="section-kicker">03 / HOW IT WORKS</p><h2 id="process-title">轻松三步，<span>即刻入局</span></h2></div></div>
+        <div class="process-grid"><article><span>01</span><h3>挑选服务</h3><p>查看固定单价，选择适合这一局的目标与数量。</p></article><article><span>02</span><h3>选择同行者</h3><p>了解擅长地图、评价和状态，选择在线陪玩师。</p></article><article><span>03</span><h3>联系客服确认</h3><p>分享或复制选单给客服，线下沟通时间和细节后录单；页面不收款。</p></article></div>
+      </section>
+
+      <section class="closing"><div class="container closing-inner"><p class="section-kicker">YOUR NEXT STORY STARTS HERE</p><h2>下一次撤离，<br /><em>一起漂亮完成。</em></h2><a href="#services">开始挑选 <svg><use href="#i-arrow"/></svg></a></div></section>
+    </main>
+
+    <footer class="site-footer container"><div class="footer-brand"><span class="brand-mark"><span></span><span></span><span></span></span><div><strong>三角洲陪玩俱乐部</strong><small>DELTA COMPANION CLUB</small></div></div><p>为每一场并肩作战，认真相遇。<br />本页面为产品体验 Demo，非实际交易平台。</p><span>© 2026 DELTA COMPANION CLUB</span></footer>
+
+    <div class="order-bar" id="order-bar" aria-live="polite"><div class="order-bar-inner container"><div class="order-bar-copy"><span>当前选单 <small id="bar-count">请选择服务</small></span><strong id="bar-price">¥0</strong></div><button id="bar-button" type="button">查看选单 <svg><use href="#i-chevron"/></svg></button></div></div>
+
+    <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+    <aside class="order-sheet" id="order-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" aria-hidden="true" tabindex="-1">
+      <div class="sheet-handle"></div><div class="sheet-header"><div><p class="section-kicker">YOUR SELECTION</p><h2 id="sheet-title">确认本次选单</h2></div><button class="icon-button" id="close-sheet" type="button" aria-label="关闭选单"><svg><use href="#i-close"/></svg></button></div>
+      <div class="sheet-content"><div class="sheet-row"><span>服务项目</span><strong id="summary-service">尚未选择</strong></div><div class="sheet-row quantity-row"><span>局数 / 时长</span><div class="quantity-control"><button id="decrease" type="button" aria-label="减少数量">−</button><strong id="quantity">1</strong><button id="increase" type="button" aria-label="增加数量">+</button></div></div><div class="sheet-row"><span>陪玩师</span><strong id="summary-companion">尚未选择</strong></div><div class="sheet-total"><span>参考总价 <small>固定单价 × 数量</small></span><strong id="summary-total">¥0</strong></div><p class="sheet-note">请将选单发送给客服，客服会线下确认时段、服务细节及录单。此页面不会收取任何费用。</p><div class="sheet-actions"><button class="share-button" id="share-order" type="button"><svg><use href="#i-share"/></svg> 分享选单给客服</button><button class="copy-button" id="copy-order" type="button"><svg><use href="#i-copy"/></svg> 复制选单文案</button></div><p class="contact-note">客服入口尚未配置。分享时可在手机系统菜单中选择常用聊天应用。</p><p class="status-message" id="status-message" role="status"></p></div>
+    </aside>
+  </body>
+</html>
